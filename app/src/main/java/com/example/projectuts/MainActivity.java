@@ -33,4 +33,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BurgerkillActivity.class);
         startActivity(intent);
     }
+
+    public void handleExit(View view) {
+        finish();
+    }
 }
