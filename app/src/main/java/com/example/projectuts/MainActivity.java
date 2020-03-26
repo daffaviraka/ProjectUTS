@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handleBMTH(View view) {
-        Intent intent = new Intent(this, BMTHActivity.class);
+        Intent intent = new Intent(this, BringActivity.class);
         startActivity(intent);
     }
 
@@ -37,4 +37,8 @@ public class MainActivity extends AppCompatActivity {
     public void handleExit(View view) {
         finish();
     }
+
+
+
+
 }
