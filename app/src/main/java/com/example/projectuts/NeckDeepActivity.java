@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import com.example.projectuts.adapters.AlbumAdapter;
 import com.example.projectuts.models.AlbumLogo;
+import com.example.projectuts.models.SongList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,7 @@ public class NeckDeepActivity extends AppCompatActivity {
         albums.add(new AlbumLogo("https://upload.wikimedia.org/wikipedia/en/f/f6/Peace_and_the_Panic.jpg","The Peace And The Panic"));
         
         AlbumAdapter adapter = new AlbumAdapter(this, albums);
+        adapter.setListLagu(SongList.getListData3());
         albumView.setAdapter(adapter);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);

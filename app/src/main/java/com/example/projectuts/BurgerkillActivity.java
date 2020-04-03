@@ -9,6 +9,7 @@ import android.os.Bundle;
 import com.example.projectuts.R;
 import com.example.projectuts.adapters.AlbumAdapter;
 import com.example.projectuts.models.AlbumLogo;
+import com.example.projectuts.models.SongList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +31,9 @@ public class BurgerkillActivity extends AppCompatActivity {
         albums.add(new AlbumLogo("https://m.media-amazon.com/images/I/61goDCC7zAL._AA256_.jpg","Adamantine"));
 
         AlbumAdapter adapter = new AlbumAdapter(this, albums);
+        adapter.setListLagu(SongList.getListData4());
         albumView.setAdapter(adapter);
+
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         albumView.setLayoutManager(layoutManager);
