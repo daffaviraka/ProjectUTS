@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handleBurgerkill(View view) {
-        Intent intent = new Intent(this, BurgerkillActivity.class);
+        Intent intent = new Intent(this, BurgerkillActivity .class);
         startActivity(intent);
     }
 

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -56,15 +57,18 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.ViewHolder>{
         Picasso.get().load(item.getLogo()).into(holder.logoImage);
         holder.nameText.setText(item.getName());
 
+//        
         //intent parcelable to detail
         holder.layout_Album.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(context,getListLagu().get(position).getJudulAlbum()+" clicked",Toast.LENGTH_SHORT).show();
                 Intent detailActivity = new Intent(context, DetailActivity.class);
                 detailActivity.putExtra(DetailActivity.EXTRA_ALBUM, listLagu.get(position));
                 context.startActivity(detailActivity);
             }
         });
+
        // Picasso.get().load(item.getLogo()).into(holder.logoImage);
     }
 
