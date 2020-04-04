@@ -57,7 +57,7 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.ViewHolder>{
         holder.nameText.setText(item.getName());
 
         //intent parcelable to detail
-        holder.button.setOnClickListener(new View.OnClickListener() {
+        holder.layout_Album.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent detailActivity = new Intent(context, DetailActivity.class);
@@ -77,14 +77,14 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.ViewHolder>{
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView logoImage;
         TextView nameText;
-        //CardView layout_Album;
-        Button button;
+        CardView layout_Album;
+        //Button button;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             logoImage = itemView.findViewById(R.id.image_logo);
             nameText = itemView.findViewById(R.id.text_name);
-            //layout_Album = itemView.findViewById(R.id.layoutAlbum);
-            button = itemView.findViewById(R.id.button10);
+            layout_Album = itemView.findViewById(R.id.LayoutAlbum);
+            //button = itemView.findViewById(R.id.button10);
         }
 
     }

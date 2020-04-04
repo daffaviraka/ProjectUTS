@@ -211,9 +211,7 @@ public class SongList {
                             "12. Custer\n"+
                             "13. Spit It Out\n"+
                             "14. Metabolic / 742617000027\n"+
-                            "15. (sic)\n"+
-                            "16. People = Shit\n"+
-                            "17. Surfacing / Till We Die"
+                            "15. (sic)"
             },
             {
                 "https://is5-ssl.mzstatic.com/image/thumb/Music123/v4/2b/4d/97/2b4d97a1-d445-c0f9-6f95-f602392ec362/016861741006.jpg/400x400bb.jpeg",
