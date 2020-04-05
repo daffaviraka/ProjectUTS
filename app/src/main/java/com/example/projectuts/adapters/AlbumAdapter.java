@@ -57,7 +57,7 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.ViewHolder>{
         Picasso.get().load(item.getLogo()).into(holder.logoImage);
         holder.nameText.setText(item.getName());
 
-//        
+//
         //intent parcelable to detail
         holder.layout_Album.setOnClickListener(new View.OnClickListener() {
             @Override
